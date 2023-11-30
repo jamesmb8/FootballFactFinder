@@ -196,5 +196,6 @@
         private TextBox textBox5;
         private TextBox textBox6;
         private TextBox textBox7;
+        private Button BTNQuiz2;
     }
 }
