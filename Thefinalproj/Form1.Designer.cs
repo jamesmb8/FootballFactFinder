@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.LBTable = new System.Windows.Forms.ListBox();
-            this.BTNTable = new System.Windows.Forms.Button();
-            this.BTNTeam = new System.Windows.Forms.Button();
-            this.BTNFixtures = new System.Windows.Forms.Button();
             this.BTNQuiz = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -39,7 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // LBTable
@@ -50,31 +46,6 @@
             this.LBTable.Name = "LBTable";
             this.LBTable.Size = new System.Drawing.Size(318, 319);
             this.LBTable.TabIndex = 0;
-            // 
-            // BTNTable
-            // 
-            this.BTNTable.Location = new System.Drawing.Point(45, 58);
-            this.BTNTable.Name = "BTNTable";
-            this.BTNTable.Size = new System.Drawing.Size(75, 23);
-            this.BTNTable.TabIndex = 1;
-            this.BTNTable.Text = "Table";
-            this.BTNTable.UseVisualStyleBackColor = true;
-            // 
-            // BTNTeam
-            // 
-            this.BTNTeam.Location = new System.Drawing.Point(126, 58);
-            this.BTNTeam.Name = "BTNTeam";
-            this.BTNTeam.Size = new System.Drawing.Size(75, 23);
-            this.BTNTeam.TabIndex = 2;
-            this.BTNTeam.UseVisualStyleBackColor = true;
-            // 
-            // BTNFixtures
-            // 
-            this.BTNFixtures.Location = new System.Drawing.Point(207, 58);
-            this.BTNFixtures.Name = "BTNFixtures";
-            this.BTNFixtures.Size = new System.Drawing.Size(75, 23);
-            this.BTNFixtures.TabIndex = 3;
-            this.BTNFixtures.UseVisualStyleBackColor = true;
             // 
             // BTNQuiz
             // 
@@ -88,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 24);
+            this.label1.Location = new System.Drawing.Point(45, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 15);
             this.label1.TabIndex = 5;
@@ -104,7 +75,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 24);
+            this.textBox1.Location = new System.Drawing.Point(112, 26);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 23);
             this.textBox1.TabIndex = 7;
@@ -134,20 +105,11 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(552, 229);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
-            this.panel1.TabIndex = 11;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
@@ -155,9 +117,6 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BTNQuiz);
-            this.Controls.Add(this.BTNFixtures);
-            this.Controls.Add(this.BTNTeam);
-            this.Controls.Add(this.BTNTable);
             this.Controls.Add(this.LBTable);
             this.Name = "Form1";
             this.ResumeLayout(false);
@@ -168,9 +127,6 @@
         #endregion
 
         private ListBox LBTable;
-        private Button BTNTable;
-        private Button BTNTeam;
-        private Button BTNFixtures;
         private Button BTNQuiz;
         private Label label1;
         private LinkLabel linkLabel1;
@@ -178,7 +134,6 @@
         private Label label2;
         private TextBox textBox2;
         private Button button1;
-        private Panel panel1;
         private Label LBLFirstName;
         private Button BTNSearch;
         private Label LBLLastName;
