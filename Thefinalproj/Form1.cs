@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace Thefinalproj
 {
    
@@ -6,10 +8,9 @@ namespace Thefinalproj
     
     public partial class Form1 : Form
     {
-        class Player
-        {
-            public string FirstName =
-        }
+
+
+       
         
         public Form1()
         {
@@ -58,6 +59,19 @@ namespace Thefinalproj
 
         private void TBFirstName_TextChanged_1(object sender, EventArgs e)
         {
+
+        }
+
+        private void getPlayers()
+        {
+            List<string> players = File.ReadAllLines("PlayerList.txt").ToList();
+            foreach (string player in players)
+            {
+               List<string>PlayerDetails = player.Split(',').ToList();
+               Player newplayer = new Player(PlayerDetails[0], PlayerDetails)
+
+
+            }
 
         }
     }
