@@ -45,5 +45,10 @@ namespace Thefinalproj
         {
 
         }
+
+        private void TBFullName_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
