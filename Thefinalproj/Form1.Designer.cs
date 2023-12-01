@@ -90,6 +90,7 @@
             this.TBFirstName.Name = "TBFirstName";
             this.TBFirstName.Size = new System.Drawing.Size(100, 23);
             this.TBFirstName.TabIndex = 7;
+            this.TBFirstName.TextChanged += new System.EventHandler(this.TBFirstName_TextChanged_1);
             // 
             // LBLastName
             // 
@@ -245,7 +246,7 @@
         private TextBox TBLastName;
         private Button BTNSearch;
        
-        private Button BTNSearch;
+        
         private Label LBLLastName;
         
         

@@ -6,6 +6,11 @@ namespace Thefinalproj
     
     public partial class Form1 : Form
     {
+        class Player
+        {
+            public string FirstName =
+        }
+        
         public Form1()
         {
             InitializeComponent();
@@ -47,6 +52,11 @@ namespace Thefinalproj
         }
 
         private void TBFullName_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TBFirstName_TextChanged_1(object sender, EventArgs e)
         {
 
         }
