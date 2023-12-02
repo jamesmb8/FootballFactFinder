@@ -66,12 +66,23 @@ namespace Thefinalproj
 
         }
 
+       
+
+        private void BTNClear_Click(object sender, EventArgs e)
+        {
+
+            TBFirstName.Clear();
+            TBLastName.Clear();
+
+        }
+
+
         private void getPlayers()
         {
             List<string> players = File.ReadAllLines("PlayerList.txt").ToList();
             foreach (string player in players)
             {
-               List<string>PlayerDetails = player.Split(',').ToList();
+                List<string> PlayerDetails = player.Split(',').ToList();
                 Player newplayer = new Player(PlayerDetails[0], PlayerDetails[1], Convert.ToInt32(PlayerDetails[2]), Convert.ToInt32(PlayerDetails[3]), Convert.ToInt32(PlayerDetails[4]), Convert.ToInt32(PlayerDetails[5]), Convert.ToInt32(PlayerDetails[6]));
 
 
@@ -81,22 +92,18 @@ namespace Thefinalproj
                 string User_firstName = TBFirstName.Text;
                 string User_lastName = TBLastName.Text;
 
-                while (User_firstName == Player)
-
                 return Text;
 
             }
 
-
-
         }
 
-        private void BTNClear_Click(object sender, EventArgs e)
+       
+
+        private void LBTable_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            TBFirstName.Clear();
-            TBLastName.Clear();
-
+            List<String> Table = File.ReadAllLines("Table.txt.txt").ToList();
+            LBTable.Items.Add(Table);
         }
     }
 }
