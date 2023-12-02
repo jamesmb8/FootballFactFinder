@@ -49,6 +49,10 @@ namespace Thefinalproj
 
         private void BTNSearch_Click(object sender, EventArgs e)
         {
+            
+
+            
+            
 
         }
 
@@ -68,10 +72,30 @@ namespace Thefinalproj
             foreach (string player in players)
             {
                List<string>PlayerDetails = player.Split(',').ToList();
-               Player newplayer = new Player(PlayerDetails[0], PlayerDetails)
+                Player newplayer = new Player(PlayerDetails[0], PlayerDetails[1], Convert.ToInt32(PlayerDetails[2]), Convert.ToInt32(PlayerDetails[3]), Convert.ToInt32(PlayerDetails[4]), Convert.ToInt32(PlayerDetails[5]), Convert.ToInt32(PlayerDetails[6]));
 
 
             }
+            string UsersPlayer()
+            {
+                string User_firstName = TBFirstName.Text;
+                string User_lastName = TBLastName.Text;
+
+                while (User_firstName == Player)
+
+                return Text;
+
+            }
+
+
+
+        }
+
+        private void BTNClear_Click(object sender, EventArgs e)
+        {
+
+            TBFirstName.Clear();
+            TBLastName.Clear();
 
         }
     }

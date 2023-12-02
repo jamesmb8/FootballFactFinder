@@ -47,6 +47,7 @@
             this.LBAssists = new System.Windows.Forms.Label();
             this.LBYellowCard = new System.Windows.Forms.Label();
             this.LBRedCards = new System.Windows.Forms.Label();
+            this.BTNClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBTable
@@ -205,11 +206,22 @@
             this.LBRedCards.TabIndex = 21;
             this.LBRedCards.Text = "Red Cards";
             // 
+            // BTNClear
+            // 
+            this.BTNClear.Location = new System.Drawing.Point(537, 25);
+            this.BTNClear.Name = "BTNClear";
+            this.BTNClear.Size = new System.Drawing.Size(75, 23);
+            this.BTNClear.TabIndex = 22;
+            this.BTNClear.Text = "Clear";
+            this.BTNClear.UseVisualStyleBackColor = true;
+            this.BTNClear.Click += new System.EventHandler(this.BTNClear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 469);
+            this.Controls.Add(this.BTNClear);
             this.Controls.Add(this.LBRedCards);
             this.Controls.Add(this.LBYellowCard);
             this.Controls.Add(this.LBAssists);
@@ -271,5 +283,6 @@
         private Label LBAssists;
         private Label LBYellowCard;
         private Label LBRedCards;
+        private Button BTNClear;
     }
 }
