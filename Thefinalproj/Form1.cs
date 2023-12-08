@@ -17,21 +17,13 @@ namespace Thefinalproj
 
         private void BTNSearch_Click(object sender, EventArgs e)
         {
-           
             UsersPlayer();
-
         }
-
-      
         private void BTNClear_Click(object sender, EventArgs e)
         {
-
             TBFirstName.Clear();
             TBLastName.Clear();
-
         }
-
-
         private void GetPlayers()
         {
             List<string> players = File.ReadAllLines("PlayerList.txt").ToList();
@@ -40,12 +32,8 @@ namespace Thefinalproj
                 List<string> PlayerDetails = player.Split(',').ToList();
                 Player newplayer = new Player(PlayerDetails[0], PlayerDetails[1], Convert.ToInt32(PlayerDetails[2]), Convert.ToInt32(PlayerDetails[3]), Convert.ToInt32(PlayerDetails[4]), Convert.ToInt32(PlayerDetails[5]), Convert.ToInt32(PlayerDetails[6]));
                 playerList.Add(newplayer);
-
             }
-            
-
         }
-
         void UsersPlayer()
         {
             string User_firstName = TBFirstName.Text;
@@ -58,10 +46,7 @@ namespace Thefinalproj
                     LoadDetails(player);
                     isMatch = true;
                     break;
- 
                 }
-
-
             }
             if (!isMatch)
             {
@@ -71,8 +56,6 @@ namespace Thefinalproj
             void LoadDetails(Player player)
             {
                 TBFullName.Text = ($"{player.FirstName} {player.LastName}");
-
-
                 TBGamesPlayed.Text = player.GamesPlayed.ToString();
                 TBGoals.Text = player.Goals.ToString();
                 TBAssists.Text = player.Assists.ToString();
@@ -80,7 +63,6 @@ namespace Thefinalproj
                 TBRedCards.Text = player.RedCards.ToString();
                
             }
-
         }
         void LoadTable()
         {
@@ -88,7 +70,6 @@ namespace Thefinalproj
             foreach (String team in Table)
             {
                 LBTable.Items.Add(team);
-
             }
         }
         void UserAbility()
@@ -99,17 +80,7 @@ namespace Thefinalproj
             TBAssists.Enabled = false;
             TBYellowCards.Enabled = false;
             TBRedCards.Enabled = false;
-
         }
-
-       
-
-        private void LBTable_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
         
     }
 }

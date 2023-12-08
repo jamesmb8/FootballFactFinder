@@ -8,7 +8,8 @@ namespace Thefinalproj
 {
     public class Player
     {
-        public Player(string firstName, string lastName, int gamesPlayed, int goals, int assists, int yellowCards, int redCards )
+        public Player(string firstName, string lastName, int gamesPlayed,
+            int goals, int assists, int yellowCards, int redCards )
         {
             FirstName = firstName;
             LastName = lastName;    

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.LBTable = new System.Windows.Forms.ListBox();
-            this.BTNQuiz = new System.Windows.Forms.Button();
             this.LBLFirstName = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.TBFirstName = new System.Windows.Forms.TextBox();
@@ -59,15 +58,6 @@
             this.LBTable.Size = new System.Drawing.Size(318, 319);
             this.LBTable.TabIndex = 0;
             this.LBTable.SelectedIndexChanged += new System.EventHandler(this.LBTable_SelectedIndexChanged);
-            // 
-            // BTNQuiz
-            // 
-            this.BTNQuiz.Location = new System.Drawing.Point(686, 27);
-            this.BTNQuiz.Name = "BTNQuiz";
-            this.BTNQuiz.Size = new System.Drawing.Size(75, 23);
-            this.BTNQuiz.TabIndex = 4;
-            this.BTNQuiz.Text = "Quiz";
-            this.BTNQuiz.UseVisualStyleBackColor = true;
             // 
             // LBLFirstName
             // 
@@ -239,7 +229,6 @@
             this.Controls.Add(this.TBFirstName);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.LBLFirstName);
-            this.Controls.Add(this.BTNQuiz);
             this.Controls.Add(this.LBTable);
             this.Name = "Form1";
             this.ResumeLayout(false);
@@ -250,7 +239,6 @@
         #endregion
 
         private ListBox LBTable;
-        private Button BTNQuiz;
         private Label LBLFirstName;
         private LinkLabel linkLabel1;
         private TextBox TBFirstName;
