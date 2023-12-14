@@ -57,7 +57,7 @@
             this.LBTable.Name = "LBTable";
             this.LBTable.Size = new System.Drawing.Size(318, 319);
             this.LBTable.TabIndex = 0;
-            this.LBTable.SelectedIndexChanged += new System.EventHandler(this.LBTable_SelectedIndexChanged);
+            
             // 
             // LBLFirstName
             // 

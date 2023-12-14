@@ -30,7 +30,13 @@ namespace Thefinalproj
             foreach (string player in players)
             {
                 List<string> PlayerDetails = player.Split(',').ToList();
-                Player newplayer = new Player(PlayerDetails[0], PlayerDetails[1], Convert.ToInt32(PlayerDetails[2]), Convert.ToInt32(PlayerDetails[3]), Convert.ToInt32(PlayerDetails[4]), Convert.ToInt32(PlayerDetails[5]), Convert.ToInt32(PlayerDetails[6]));
+                Player newplayer = new Player(PlayerDetails[0],
+                    PlayerDetails[1],
+                    Convert.ToInt32(PlayerDetails[2]), 
+                    Convert.ToInt32(PlayerDetails[3]),
+                    Convert.ToInt32(PlayerDetails[4]),
+                    Convert.ToInt32(PlayerDetails[5]), 
+                    Convert.ToInt32(PlayerDetails[6]));
                 playerList.Add(newplayer);
             }
         }
@@ -41,7 +47,8 @@ namespace Thefinalproj
             bool isMatch = false;
             foreach (Player player in playerList)
             {
-                if (player.FirstName.Equals(User_firstName) && player.LastName.Equals(User_lastName))
+                if (player.FirstName.Equals(User_firstName) &&
+                    player.LastName.Equals(User_lastName))
                 {
                     LoadDetails(player);
                     isMatch = true;
